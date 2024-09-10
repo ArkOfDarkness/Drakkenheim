@@ -1,0 +1,90 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943064,
+		"dateLastModified": 1725943064
+	},
+	"spell": [
+		{
+			"name": "Toxic Shield",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You gain resistance to poison damage and advantage on saves against being {@condition poisoned} for the duration. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield sprays them with poison, dealing {@damage 1d8} poison damage to the attacker."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"s": true,
+				"m": "a drop of dwarven blood"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the poison damage increases by {@dice 1d8} for every 2 slot levels above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}

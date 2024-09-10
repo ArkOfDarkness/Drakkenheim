@@ -1,0 +1,88 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942996,
+		"dateLastModified": 1725942996
+	},
+	"spell": [
+		{
+			"name": "Fetid Blade",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You coat a weapon you touch in an acidic substance. Until the spell ends, weapon attacks made with it deal an extra {@damage 2d4} acid damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.",
+				"In addition, a creature hit with a melee attack using the weapon must make a Constitution saving throw. On a failed save, it becomes {@condition poisoned} until the end of the attacker's next turn."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of acid and a pinch of iron dust"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by {@dice 1d4} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		}
+	]
+}

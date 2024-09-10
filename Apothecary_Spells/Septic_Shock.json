@@ -1,0 +1,83 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943048,
+		"dateLastModified": 1725943048
+	},
+	"spell": [
+		{
+			"name": "Septic Shock",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Choose a creature you can see within range that doesn't have all its hit points. You infect the target's wounds with putrefying bacteria. The target must make a Constitution saving throw. If it has less than half its maximum hit points remaining, it makes the saving throw with disadvantage. On a failed save, the target takes {@damage 10d8} necrotic damage and gains 1 level of {@condition exhaustion}. On a successful save, it takes half as much damage and does not gain any {@condition exhaustion} levels."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of a rotten liver"
+			},
+			"conditionInflict": [
+				"exhaustion"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
+	]
+}

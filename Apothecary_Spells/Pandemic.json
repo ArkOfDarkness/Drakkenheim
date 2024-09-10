@@ -1,0 +1,83 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943029,
+		"dateLastModified": 1725943029
+	},
+	"spell": [
+		{
+			"name": "Pandemic",
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You infect one creature you can see within range with a deadly and highly infectious disease which lasts until it is cured by {@i greater restoration}, {@i heal}, or {@i wish}. Other spells and magical effects which remove diseases fail to cure the infection caused by this spell.",
+				"While infected, a creature must make a Constitution saving throw at the start of each of its turns. On a failed saving throw, it takes {@damage 10d8} necrotic damage and becomes {@condition incapacitated} until the start of its next turn. On a successful save, it takes half as much damage and is not {@condition incapacitated}. An infected creature must make the saving throw at the start of each of its turns until it dies or is cured.",
+				"A creature that starts its turn within 10 feet of a creature infected by this spell must make a Constitution saving throw. On a failed saving throw, that creature contracts the infection.",
+				"When you cast the spell, you can choose yourself and up to eight other creatures to be unaffected by the infection caused by this casting of the spell."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the fetid corpse of a plague rat"
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		}
+	]
+}

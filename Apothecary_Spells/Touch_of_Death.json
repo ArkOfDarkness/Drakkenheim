@@ -1,0 +1,84 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943056,
+		"dateLastModified": 1725943056
+	},
+	"spell": [
+		{
+			"name": "Touch of Death",
+			"level": 9,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Make a melee spell attack against a target within 5 feet of you. On a hit, the target takes 200 poison damage. This damage ignores any resistance or immunity the creature has to poison damage, and can't be reduced or prevented in any way.",
+				"The potent poison lingers in the target's body and pulls it toward death. A target reduced to zero hit points by this poison damage automatically fails death saving throws until it finishes a long rest. A {@i heal} or {@i greater restoration} spell cast on the target also ends this effect."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "the finger of a hag"
+			},
+			"areaTags": [
+				"ST"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"spellAttack": [
+				"M"
+			]
+		}
+	]
+}

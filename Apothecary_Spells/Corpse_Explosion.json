@@ -1,0 +1,89 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942982,
+		"dateLastModified": 1725942982
+	},
+	"spell": [
+		{
+			"name": "Corpse Explosion",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when a creature you can see dies within 120 feet of you"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You cause the triggering creature's body to explode in a violent shower of gore and infected flesh. Creatures within 10 feet of a point centered on the triggering creature's body take {@damage 4d8} necrotic damage and {@damage 4d8} acid damage, or half as much damage on a successful Dexterity saving throw."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the necrotic damage increases by {@dice 1d8} acid damage for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"necrotic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		}
+	]
+}

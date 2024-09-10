@@ -1,0 +1,97 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943059,
+		"dateLastModified": 1725943059
+	},
+	"spell": [
+		{
+			"name": "Toxic Barrage",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You create four rays of pure poison and hurl them at targets within range. You can hurl them at one target or several.",
+				"Make a ranged spell attack for each ray. On a hit, the target takes {@damage 3d6} poison damage. If a target is hit by one or more of these rays, it must make a Constitution saving throw. On a failed save, the target is {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target can repeat the saving throw at the end of each of its turns. On a success, it is no longer {@condition poisoned}."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "four death cap mushrooms"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, you create one additional ray for each slot level above 5th."
+					]
+				}
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			]
+		}
+	]
+}

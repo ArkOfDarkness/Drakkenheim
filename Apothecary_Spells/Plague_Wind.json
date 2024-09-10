@@ -1,0 +1,78 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943035,
+		"dateLastModified": 1725943035
+	},
+	"spell": [
+		{
+			"name": "Plague Wind",
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You summon a roiling wind of flesh devouring disease and excruciating blood boiling fumes that sweeps over the area emanating from you in a 120-foot cone. Creatures in the area must make a Constitution saving throw. On a failed saving throw a creature takes {@damage 5d8} poison damage and {@damage 5d8} necrotic damage or half as much damage on a success. After taking this damage, any affected creature with 25 hit points or fewer remaining immediately dies and is reduced to a weathered skeleton as their flesh and soft tissue blows off like ash."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "mucus from a ghoul"
+			},
+			"areaTags": [
+				"N"
+			],
+			"damageInflict": [
+				"necrotic",
+				"poison"
+			]
+		}
+	]
+}

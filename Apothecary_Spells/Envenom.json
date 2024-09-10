@@ -1,0 +1,98 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942993,
+		"dateLastModified": 1725942993
+	},
+	"spell": [
+		{
+			"name": "Envenom",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Choose a creature you can see within range to inflict with a magical poison. The target takes {@damage 2d4} poison damage and must make a Constitution saving throw. On a failed saving throw, it becomes {@condition poisoned} for the spell's duration.",
+				"While {@condition poisoned} in this way, the target must make a Constitution saving throw at the end of each of its turns. It takes {@damage 2d4} poison damage on a failed saving throw. On a success, the spell ends on that target.",
+				"A {@i lesser restoration} spell cast on the target ends this spell early."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of basic poison"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+					]
+				}
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		}
+	]
+}

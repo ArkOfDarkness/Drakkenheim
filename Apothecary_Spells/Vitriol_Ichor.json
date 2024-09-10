@@ -1,0 +1,92 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943077,
+		"dateLastModified": 1725943077
+	},
+	"spell": [
+		{
+			"name": "Vitriol Ichor",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Choose a creature within range that has natural armor or is wearing armor. You magically cause the creature's natural or manufactured armor to become corroded and brittle for the spell's duration. While its armor is corroded, the creature's AC becomes 10 + the creature's Dexterity modifier."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of nitric acid and a flask of water"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you may target one additional creature for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"spellAttack": [
+				"R"
+			]
+		}
+	]
+}

@@ -1,0 +1,98 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725943042,
+		"dateLastModified": 1725943042
+	},
+	"spell": [
+		{
+			"name": "Poison Wave",
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A wave of poisonous fumes emanates from you in a 15-foot-radius sphere. Creatures within 30 feet of you must make a Constitution saving throw. On a failed save, each creature takes {@damage 4d12} poison damage and is {@condition poisoned} until the end of your next turn. On a successful saving throw, a creature takes half as much damage and does not become {@condition poisoned}."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a withered root and a drop of vinegar"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d12} for each slot level above 4th."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"areaTags": [
+				"S"
+			],
+			"damageInflict": [
+				"poison"
+			]
+		}
+	]
+}

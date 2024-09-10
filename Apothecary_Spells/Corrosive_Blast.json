@@ -1,0 +1,86 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942985,
+		"dateLastModified": 1725942985
+	},
+	"spell": [
+		{
+			"name": "Corrosive Blast",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A spew of acrid chemicals erupts from your hands. Each creature in a 30-foot cone must make a Dexterity saving throw. A creature takes {@damage 10d4} acid damage on a failed save, or half as much damage on a successful one.",
+				"The acid destroyed any objects made of organic materials in the spell's area. A creature killed by this spell has its flesh entirely dissolved, leaving behind only a corroded skeleton."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of acid"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the acid damage increases by {@dice 2d4} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid"
+			],
+			"areaTags": [
+				"N"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		}
+	]
+}

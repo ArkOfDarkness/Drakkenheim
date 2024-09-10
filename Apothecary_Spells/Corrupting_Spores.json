@@ -1,0 +1,98 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942990,
+		"dateLastModified": 1725942990
+	},
+	"spell": [
+		{
+			"name": "Corrupting Spores",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A small patch of three poison mushrooms magically sprout in a 5-foot square that you can see within range. The mushrooms emit toxic spores, and any creature that starts its turn within 10 feet of the mushroom patch must make a Constitution saving throw. On a failed save, the creature takes {@damage 1d8} poison damage for each mushroom in the patch and is {@condition poisoned} until the start of its next turn.",
+				"Until the spell ends, you can use a bonus action on your turn to cause an additional mushroom to sprout within the patch."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a dried mushroom"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, one additional mushroom sprouts within the initial patch for each slot level above 4th."
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"damageInflict": [
+				"poison"
+			],
+			"areaTags": [
+				"Q"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		}
+	]
+}

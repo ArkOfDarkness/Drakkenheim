@@ -1,0 +1,82 @@
+{
+	"siteVersion": "1.210.1",
+	"_meta": {
+		"sources": [
+			{
+				"json": "Drakkenheim",
+				"abbreviation": "Drakkenheim",
+				"full": "Drakkenheim",
+				"url": "",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1725942974,
+		"dateLastModified": 1725942974
+	},
+	"spell": [
+		{
+			"name": "Breath of Nightshade",
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Apothecary",
+						"source": "Drakkenheim"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You exhale a 60-foot-cone of lethal poison. Each creature in the area when you cast the spell must make a Constitution saving throw. On a failed save, the creature becomes {@condition poisoned} for 1 hour. While {@condition poisoned} by this spell, the creature is {@condition paralyzed}.",
+				"The spell ends for an affected creature if it takes any damage."
+			],
+			"source": "Drakkenheim",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pair of deadly nightshade flowers"
+			},
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"areaTags": [
+				"N"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		}
+	]
+}
